@@ -1,0 +1,19 @@
+{
+  "name": "tdd-backbone",
+  "version": "1.0.0",
+  "description": "Sample code for 'Test-driven Development of a Backbone.js App' post.",
+  "main": "test/test-runner.html",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "Piotr Delawski",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-qunit": "^1.4.0",
+    "node-qunit-phantomjs": "^1.4.0"
+  }
+}
