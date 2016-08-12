@@ -143,7 +143,7 @@ QUnit.test( 'Checkboxes have correct values', function( assert ) {
   view.render();
 
   values = _.pluck( jQuery( '.control-color-container' ).find( 'input[type="checkbox"]' ), 'value' );
-  assert.notOk( _.isEmpty( values ), 'there are values );
+  assert.notOk( _.isEmpty( values ), 'there are values' );
   assert.deepEqual( _.difference( values, [ 'red', 'green', 'blue' ] ), [], 'checkboxes values are as expected' );
 } );
 ```
