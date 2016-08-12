@@ -1,4 +1,5 @@
-## Part 2: Implementing Backbone.js Model
+Part 2: Implementing Backbone.js Model
+===
 
 **In the first part of the series I walked you through the test-driven development concepts.
 Then we have set up the project workspace, including a QUnit test runner and an empty source files accompanied with test files.**
@@ -70,7 +71,8 @@ window.ControlColor = Backbone.Model.extend( {
 ```
 Tests are **green** now. Again we won’t refactor neither implementation nor testing code.
 
-### Providing Default Options
+Providing Default Options
+---
 
 One of the `ControlColor`’s requirements was to have the ‘all’ option added to the list of available options.
 So let’s add a test describing it straight away, in the same test block:
@@ -202,7 +204,8 @@ It does look pretty neat, doesn’t it?
 
 Now, as we went through **refactor** phase, we can carry on and test behaviour of the `checked` array.
 
-### Implementing Business Rules Around Checked Options
+Implementing Business Rules Around Checked Options
+---
 
 We know that by default, if nothing is passed on initialization to the model, ‘all’ option should be checked:
 
@@ -299,11 +302,9 @@ Now, as the test succeeds, we want to make sure the ‘all’ option will be unc
 QUnit.test( 'Checked array is handled properly', function( assert ) {
   ...
   model.set( 'checked', [ 'all', 'red', 'green' ] );
-  assert.deepEqual( model.get( 'checked' ), [ 'all' ],
-↪ '"all" option unchecks other ones' );
+  assert.deepEqual( model.get( 'checked' ), [ 'all' ], '"all" option unchecks other ones' );
   model.set( 'checked', [ 'all', 'blue' ] );
-  assert.deepEqual( model.get( 'checked' ), [ 'blue' ],
-↪ '"all" option is removed if it is passed once again' );
+  assert.deepEqual( model.get( 'checked' ), [ 'blue' ], '"all" option is removed if it is passed once again' );
 } );
 ```
 

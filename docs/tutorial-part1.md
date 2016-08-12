@@ -1,4 +1,5 @@
-# Test-driven Development of a Backbone.js App
+Test-driven Development of a Backbone.js App
+===
 
 ##### Implementing test-driven development (TDD) principles based on a QUnit testing suite.
 
@@ -15,7 +16,8 @@ James Sinclair states that in TDD the programmer is more confident in his code w
 How is it so? Boring unit testing being fun to the developer?
 Now I just had to give TDD a try!
 
-### TDD Fundamentals
+TDD Fundamentals
+---
 
 As you probably already know from [James Sinclair’s post](http://jrsinclair.com/articles/2016/gentle-introduction-to-javascript-tdd-intro/), each step in test-driven development is split into 3 phases:
 
@@ -38,7 +40,8 @@ Rinse and repeat those 3 steps until you feel all requirements are satisfied for
 
 Sounds fairly simple? Let’s try to illustrate the process with an example then.
 
-### Using TDD to Create a Front-end Filtering Module
+Using TDD to Create a Front-end Filtering Module
+---
 
 Imagine we are writing a simple filtering module for an online store.
 It consists of a set of checkboxes representing available color options for a product.
@@ -56,7 +59,8 @@ If you’re new to the Backbone.js or would like to learn more about it, I recom
 For a unit testing framework, I have used [QUnit](http://qunitjs.com/).
 If you haven’t used QUnit before, I suggest going straight to [Cookbook section](http://qunitjs.com/cookbook/) on their website to quickly get to know more about it.
 
-### Setting Up the Project
+Setting Up the Project
+---
 
 Our project structure looks like this:
 

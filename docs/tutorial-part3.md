@@ -1,4 +1,5 @@
-## Part 3: Creating Backbone.js View
+Part 3: Creating Backbone.js View
+===
 
 **In the previous part of the series, we have created our first Backbone.js model using TDD principles.**
 
@@ -27,7 +28,8 @@ window.ControlColorView = Backbone.View.extend( {} );
 From the **red** phase we rapidly moved to the **green** phase.
 There’s nothing to **refactor** so far, so we’ll now take care of rendering the markup based on model’s state.
 
-### Rendering the Markup in the View
+Rendering the Markup in the View
+---
 
 Unit testing views is a bit more complex than testing models.
 This is because of the fact that we have to provide a _context_ the view.
@@ -240,7 +242,8 @@ QUnit.module( 'views/control-color.js', function( hooks ) {
 
 At this point, all tests are still **green** while the code became leaner and more readable.
 
-###Implementing Checked Values
+Implementing Checked Values
+---
 
 Our current view implementation renders checkboxes based on the `options` array from the related model.
 What we need to do next is to set a `checked` state on those options that are listed in the model’s `checked` array.
@@ -287,7 +290,8 @@ window.ControlColorView = Backbone.View.extend( {
 
 Our implementation and test code seem okay, so we’re skipping the **refactor** phase this time.
 
-### Binding the View to the Model
+Binding the View to the Model
+---
 
 Almost all parts of your control view are ready.
 Now it’s time to couple the view and the model together.
@@ -366,6 +370,7 @@ We should now refactor (e.g. cache input jQuery objects in the `render()` method
 
 In the last part of the series we have created a Backbone.js view to represent the state of the model in the UI and to handle user actions.
 
-### Summary
+Summary
+---
 
 Following test-driven development principles might seem tedious and time-consuming at first, but in a long run it really pays off. The code written this way is well covered by unit tests making the developer pretty confident in what he has just created. Also, the development process itself should become more enjoyable and fun.
